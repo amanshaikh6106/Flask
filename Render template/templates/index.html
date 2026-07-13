@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">    
+<html>
+    <head>
+        <title>My Website</title>
+    </head>
+    <body>
+        <h1>Welcome to My Website</h1>
+        <h1>Welcome {{ student.name | upper }}</h1>
+        <p>I am {{ student.age}} years old and live in {{ student.city | upper }}.</p>
+        <p>This is a sample website created for demonstration purposes.</p>
+        <h2>Subjects I am learning:{{student.subjects}}</h2>
+         <ol>
+        {% for subject in student.subjects %}
+            <li>{{ subject }}</li>
+        {% endfor %}
+    </ol>
+    </body>
+</html>
