@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Management System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div class="logo">Focus</div>
+    <div class="nav-links">
+      <a href="/index">Home</a>
+      <a href="/events">Events</a>
+      <a href="/register">Register</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+
+
+  <div class="page-header">
+    <h2>Contact Us</h2>
+    <p>We love to hear from you</p>
+  </div>
+
+
+  <div class="content-box">
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>Organization</h4>
+        <p>Focus Management System</p>
+      </div>
+      <div class="contact-card">
+        <h4>Address</h4>
+        <p>maliwada, A.nagar, Maharashtra - 414001</p>
+      </div>
+      <div class="contact-card">
+        <h4>Phone</h4>
+        <p>+91 98765 43210</p>
+      </div>
+      <div class="contact-card">
+        <h4>Email</h4>
+        <p>focus@gmail.com</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h3 style="color:#ffffff; margin-bottom:5px;">Send Us a Message</h3>
+    <p style="color:#aaaacc; font-size:14px; margin-bottom:10px;">We will reply within 24 hours</p>
+
+    <form action="/contact" method="post">
+      <label class="form-label">Your Name</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+
+      <label class="form-label">Your Email</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label class="form-label">Message</label>
+      <textarea name="message" placeholder="Write your message here..."></textarea>
+
+      <div class="form-buttons">
+        <input type="submit" value="Send Message" class="btn-submit">
+        <input type="reset" value="Clear" class="btn-reset">
+      </div>
+    </form>
+
+  </div>
+
+
+  <div class="footer">
+    &copy; 2026 <span>Focus</span> — All Rights Reserved
+  </div>
+
+</body>
+</html>

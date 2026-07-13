@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Management System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Focus</div>
+    <div class="nav-links">
+      <a href="/index">Home</a>
+      <a href="/events">Events</a>
+      <a href="/register">Register</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+
+
+  <div class="page-header">
+    <h2>Upcoming Events</h2>
+    <p>Browse and register for our exciting events</p>
+  </div>
+
+
+  <div class="content-box">
+    <table>
+      <thead>
+        <tr>
+          <th>Event ID</th>
+          <th>Event Name</th>
+          <th>Date</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge">E101</span></td>
+          <td> Coding Competition</td>
+          <td>28-July-2026</td>
+          <td>Auditorium</td>
+        </tr>
+        <tr>
+          <td><span class="badge">E102</span></td>
+          <td> Web Development Workshop</td>
+          <td>29-July-2026</td>
+          <td>Lab 3</td>
+        </tr>
+        <tr>
+          <td><span class="badge">E103</span></td>
+          <td> Quiz Competition</td>
+          <td>30-July-2026</td>
+          <td>Seminar Hall</td>
+        </tr>
+        <tr>
+          <td><span class="badge">E104</span></td>
+          <td>Cultural Fest</td>
+          <td>31-July-2026</td>
+          <td>Main Ground</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+    <a href="/register" class="btn-submit" style="text-decoration:none;">Register Now</a>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 <span>Focus</span> — All Rights Reserved
+  </div>
+
+</body>
+</html>

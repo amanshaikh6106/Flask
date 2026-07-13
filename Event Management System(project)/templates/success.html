@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Management System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div class="logo">Focus</div>
+    <div class="nav-links">
+      <a href="/index">Home</a>
+      <a href="/events">Events</a>
+      <a href="/register">Register</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+
+
+  <div class="content-box" style="margin-top:80px;">
+    <div class="success-box">
+      <h2>Registration Successful!</h2>
+      <p>Thank you for registering for the event.</p>
+      <p>Our team will contact you shortly with further details.</p>
+      <div class="success-links">
+        <a href="/" class="btn-submit" style="text-decoration:none;">&#8592; Go to Home</a>
+        <a href="/events" class="btn-reset" style="text-decoration:none; padding:12px 30px; display:inline-block;">View More Events</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    &copy; 2026 <span>Focus</span> — All Rights Reserved
+  </div>
+
+</body>
+</html>

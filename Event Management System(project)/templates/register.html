@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Focus Management System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+
+  <div class="navbar">
+    <div class="logo">Focus</div>
+    <div class="nav-links">
+      <a href="/index">Home</a>
+      <a href="/events">Events</a>
+      <a href="/register">Register</a>
+      <a href="/contact">Contact Us</a>
+    </div>
+  </div>
+
+
+  <div class="page-header">
+    <h2>Event Registration</h2>
+    <p>Fill in your details to register for an event</p>
+  </div>
+
+
+  <div class="content-box">
+    <form action="/register" method="post">
+
+      <label class="form-label">Participant Name</label>
+      <input type="text" name="name" placeholder="Enter your full name" required>
+
+      <label class="form-label">Email Address</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+
+      <label class="form-label">Mobile Number</label>
+      <input type="tel" name="mobile" placeholder="Enter your mobile number" required>
+
+      <label class="form-label">Gender</label>
+      <div class="radio-group">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="other"> Other</label>
+      </div>
+
+      <label class="form-label">College Name</label>
+      <input type="text" name="college" placeholder="Enter your college name">
+
+      <label class="form-label">Select Event</label>
+      <select name="event">
+        <option value="">-- Select Event --</option>
+        <option value="Coding Competition">Coding Competition</option>
+        <option value="Web Development Workshop">Web Development Workshop</option>
+        <option value="Quiz Competition">Quiz Competition</option>
+        <option value="Cultural Fest">Cultural Fest</option>
+      </select>
+
+      <label class="form-label">Participation Mode</label>
+      <div class="radio-group">
+        <label><input type="radio" name="mode" value="online"> Online</label>
+        <label><input type="radio" name="mode" value="offline"> Offline</label>
+      </div>
+
+      <label class="form-label">Comments</label>
+      <textarea name="comments" placeholder="Write any comments or questions..."></textarea>
+
+      <div class="form-buttons">
+        <input type="submit" value="Submit Registration" class="btn-submit">
+        <input type="reset" value="Reset Form" class="btn-reset">
+      </div>
+
+    </form>
+  </div>
+
+  <div class="footer">
+    &copy; 2026 <span>Focus</span> — All Rights Reserved
+  </div>
+
+</body>
+</html>
