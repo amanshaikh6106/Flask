@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select File</title>
+    <link rel="stylesheet" href="{{url_for('static',filename="CSS/style1.css")}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Success</h1>
+        <div class="success">
+            File Uploaded Successfully!
+        </div>
+        <h3>Uploaded File:</h3>
+        <p>{{ filename }}</p>
+        <a href="/">Upload Another File</a>
+    </div>
+</body>
+</html>
